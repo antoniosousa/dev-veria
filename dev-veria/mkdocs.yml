@@ -1,0 +1,45 @@
+site_name: Dev-veria
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://twitter.com/squidfunk
+    - icon: fontawesome/brands/linkedin
+      link: https://twitter.com/squidfunk
+
+plugins:
+  - git-revision-date:
+      enabled_if_env: CI
+
+theme:
+  features:
+    - navigation.instant
+    - navigation.tracking
+    #- navigation.tabs
+    - navigation.expand
+    #- navigation.indexes
+    - navigation.top
+    - header.autohide
+  language: pt
+  name: material
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Modo Noturno
+    - scheme: slate
+      primary: black
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Modo Dia
+
+markdown_extensions:
+  - pymdownx.emoji
+  - pymdownx.tasklist
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.highlight
+  - pymdownx.superfences
