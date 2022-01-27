@@ -3,15 +3,25 @@ site_name: Dev-veria
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://twitter.com/squidfunk
+      link: https://github.com/antoniosousa
     - icon: fontawesome/brands/linkedin
-      link: https://twitter.com/squidfunk
+      link: https://www.linkedin.com/in/antonioufpi/
+  # alternate:
+  #   - name: English
+  #     link: /en/
+  #     lang: en
 
 plugins:
   - git-revision-date:
       enabled_if_env: CI
+  - search:
+      lang:
+          - pt
+          - en
 
 theme:
+  icon:
+    logo: ""
   features:
     - navigation.instant
     - navigation.tracking
@@ -39,7 +49,12 @@ theme:
 markdown_extensions:
   - pymdownx.emoji
   - pymdownx.tasklist
+  - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      anchor_linenums: true
+      use_pygments: true
+  - pymdownx.inlinehilite
   - pymdownx.superfences
+  - pymdownx.snippets
